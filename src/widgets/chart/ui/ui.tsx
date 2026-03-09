@@ -8,7 +8,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import type { CategoricalChartState } from "recharts/types/chart/types";
 import styles from "./styles.module.scss";
 import clsx from "clsx";
 
@@ -81,7 +80,7 @@ export const Ui = ({ className }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
 
-  const handleMouseMove = useCallback((state: CategoricalChartState) => {
+  const handleMouseMove = useCallback((state: any) => {
     if (state.isTooltipActive && state.activeTooltipIndex !== undefined) {
       setActiveX(state.activeTooltipIndex);
     }
