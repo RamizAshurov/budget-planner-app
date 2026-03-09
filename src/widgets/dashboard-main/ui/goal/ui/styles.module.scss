@@ -1,0 +1,35 @@
+@use '/src/shared/styles/' as *;
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.text {
+
+}
+
+.title {
+    color: $black01;
+    font-weight: 600;
+    &:not(:last-child) {
+        margin-bottom: 6px;
+    }
+}
+
+.subtitle {
+    color: $black06;
+}
+
+.icon {
+    background: linear-gradient(203.2deg, #637782 -1.2%, #81B2CA 91.6%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,69 @@
+@use "/src/shared/styles/" as *;
+
+.navbar {
+    // background-color: $white;
+    // box-shadow: 0px -2px 8px 0px #09005D0F;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    max-width: 430px;
+    min-width: 320px;
+    transform: translate(-50%, 0);
+}
+
+.innerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 430px;
+}
+
+.curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.menu {
+    display: flex;
+    gap: 44px;
+}
+
+.menuLink {
+    color: $black08;
+    &.active {
+        color: $black01
+    }
+}
+
+.button {
+    background-color: #FFC727;
+    border-radius: 50%;
+    border: 2px solid $white;
+    box-sizing: content-box;
+    box-shadow: 0px 10px 52px 0px #4A556840;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -34px);
+    width: 58px;
+    height: 58px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        box-shadow: 0px -10px 0 0 10px;
+    }
+}

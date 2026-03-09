@@ -1,0 +1,41 @@
+@use "/src/shared/styles/" as *;
+
+.card {
+    border-radius: 24px;
+    padding: 20px 20px 16px;
+    &.green {
+        background-color: #D9E7E5;
+        .icon {
+            background-color: #42887C;
+        }
+    }
+    &.violet {
+        background-color: #E6E2E6;
+        .icon {
+            background-color: #836F81;
+        }
+    }
+}
+
+.icon {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    &:not(:last-child) {
+        margin-bottom: 48px;
+    }
+}
+
+.title {
+    font-weight: 700;
+    &:not(:last-child) {
+        margin-bottom: 6px;
+    }
+}
+
+.subtitle {
+    color: $black05;
+}

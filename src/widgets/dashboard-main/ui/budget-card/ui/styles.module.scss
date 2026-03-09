@@ -1,0 +1,30 @@
+@use "/src/shared/styles/" as *;
+
+.card {
+    background-color: #81B2CA;
+    border-radius: 24px;
+    color: $white;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.title {
+    font-weight: 600;
+    &:not(:last-child) {
+        margin-bottom: 2px;
+    }
+}
+
+.subtitle {
+    opacity: 0.7;
+}
+
+.budget {
+    font-weight: 700;
+}

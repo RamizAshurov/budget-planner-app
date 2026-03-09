@@ -1,0 +1,1 @@
+export { Ui as BankCard } from "./ui/ui"

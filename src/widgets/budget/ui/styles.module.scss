@@ -1,0 +1,45 @@
+@use "/src/shared/styles/" as *;
+
+.section {
+    background-color: #2C383F;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    color: $white;
+    padding-top: 34px;
+    padding-bottom: 58px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+}
+
+.innerWrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 288px;
+}
+
+.title { font-weight: 600 }
+.balance { font-weight: 700 }
+
+.progress {
+    background-color: rgba($color: $white, $alpha: 0.38);
+    border-radius: 70px;
+    width: 100%;
+    height: 6px;
+    overflow: hidden;
+}
+
+.progressBar {
+    background-color: #FAB512;
+    border-radius: inherit;
+    display: block;
+    width: calc(166 / 288 * 100%);
+    height: 100%;
+}

@@ -1,0 +1,17 @@
+.container {
+    &:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}
+
+.bankCard {
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+.budgetCard {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,62 @@
+@use "/src/shared/styles/" as *;
+
+.card {
+    border: 1px solid $black10;
+    border-radius: 24px;
+    padding: 20px;
+    min-height: 132px;
+    &.dark {
+        background-color: #37474F;
+        border-color: #37474F;
+        color: $white;
+        .title, .desc, .term {
+            color: inherit;
+        }
+    }
+}
+
+.top, .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.top {
+    &:not(:last-child) {
+        margin-bottom: 26px;
+    }
+}
+
+.title {
+    color: #37474F;
+}
+
+.desc {
+    color: $black01;
+}
+
+.tariff {
+    font-weight: 600;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.term {
+    color: $black06
+}
+
+.button {
+    background-color: #FFC727;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    outline: none;
+}

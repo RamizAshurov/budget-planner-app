@@ -1,0 +1,16 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 16px;
+    padding: 30px 24px;
+    & > *:first-child {
+        justify-self: flex-start
+    }
+    & > *:last-child {
+        justify-self: flex-end;
+    }
+}
+
+.title {
+    font-weight: 700;
+}

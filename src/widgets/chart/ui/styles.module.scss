@@ -1,0 +1,64 @@
+@use "/src/shared/styles/" as *;
+
+.chart {
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    height: 229px;
+    padding: 12px 8px 8px 4px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+     -webkit-tap-highlight-color: transparent;
+    outline: none;
+    user-select: none;
+    & * {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+    }
+}
+
+.chartLayer {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.highlight {
+    position: absolute;
+    width: 46px;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 0;
+    border-radius: 1px;
+}
+
+.tooltipWrap {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    pointer-events: none;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tooltipBox {
+    background: #1c2333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    white-space: nowrap;
+}
+
+.tooltipArrow {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid #1c2333;
+}

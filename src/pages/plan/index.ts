@@ -1,0 +1,1 @@
+export { Page as PlanPage } from "./ui/page" 

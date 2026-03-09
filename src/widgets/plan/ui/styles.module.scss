@@ -1,0 +1,37 @@
+@use "/src/shared/styles/" as *;
+
+.section {
+    background-color: $white;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    margin-top: -32px;
+    padding-block: 32px;
+}
+
+.title {
+    color: $black01;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.recommended {
+    background-color: rgba($color: #37474F, $alpha: 0.1);
+    border-radius: 24px;
+    padding: 12px 9px 9px;
+    &:not(:first-child) {
+        margin-top: 18px;
+    }
+}
+
+.recommendedTitle {
+    color: $black01;
+    text-align: center;
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}

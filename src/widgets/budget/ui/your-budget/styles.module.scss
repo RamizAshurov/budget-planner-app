@@ -1,0 +1,27 @@
+@use "/src/shared/styles/" as *;
+
+.section {
+    background-color: #F4F6F6;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    margin-top: -24px;
+    padding-top: 27px;
+    padding-bottom: 16px;
+}
+
+.header {
+    font-weight: 600;
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+.title {
+    color: $black01;
+}
+
+.expenses {
+    & > *:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
